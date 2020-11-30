@@ -1,15 +1,19 @@
 const palingdrom = (text) =>{
-    let textCase = text.toLowerCase()
-    let textLength = text.length - 1
-    let hasil = ''
-    for(let i = 0; i <= textLength; i ++){
-        hasil += textCase[i]
-    }
-    if(hasil == textCase){
-        console.log('ini palngdrom teks')
+    if(typeof text === 'string' ){
+        let textCase = text.toLowerCase()
+        let textLength = text.length - 1
+        let hasil = ''
+        for(let i = 0; i <= textLength; i ++){
+            hasil += textCase[i]
+        }
+        if(hasil == textCase){
+            console.log('ini palngdrom teks')
+        }else{
+            console.log('ini bukan palingdrom')
+        }
     }else{
-        console.log('ini bukan palingdrom')
+        console.log('Inputan Harus Number')
     }
 }
 
-palingdrom('Hello')
+palingdrom(12)
