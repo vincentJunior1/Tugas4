@@ -23,9 +23,8 @@ const devideAndShort = (angka) => {
     let realData = data.indexOf(0)
     temp = data.slice(0,realData)
     let f = temp.split('')
-    let count = f.length + newData.length
     let fSort = f.sort()
-    for(let i = 0; i < count - 1; i++){
+    for(let i = 0; i < angkaLength ; i++){
         if(i < fSort.length ){
             final += fSort[i]
         }else{
@@ -36,4 +35,4 @@ const devideAndShort = (angka) => {
 
     console.log(parseInt(final))
 }
-devideAndShort(5956560159466056)
+devideAndShort(59560560159466056)
