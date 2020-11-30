@@ -1,17 +1,13 @@
 const reverseText = (teks) => {
-    if(typeof teks === 'string'){
+    if (typeof teks === 'string') {
         let teksSplit = teks.split(' ');
         let teksLength = teksSplit.length - 1;
         let hasil = '';
-        for(let i = teksLength; i >= 0; i--){
-            if( i == 0){
-                hasil += teksSplit[i]
-            }else{
-                hasil += teksSplit[i] + ' '
-            }
+        for (let i = teksLength; i >= 0; i--) {
+            hasil += teksSplit[i] + ' '
         }
         console.log(hasil)
-    }else{
+    } else {
         console.log('input harus number')
     }
 }
